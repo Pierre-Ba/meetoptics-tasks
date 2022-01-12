@@ -47,6 +47,7 @@ const ThorVSoptoChart = ({ data }) => {
   //console.log("Highest Prices: ", HighestPrices);
 
   const Highest7Prices = HighestPrices.slice(0, 7);
+  
 
   const Highest7PricesByDiameter6mm = HighestPrices.filter(
     (item) => item.diameter === 6 || item.diameter === 6.0
@@ -83,7 +84,7 @@ const ThorVSoptoChart = ({ data }) => {
 
   return (
     <div>
-      <h2> Most expensive products</h2>
+      <h2> Thor vs Opto: most expensive products</h2>
 
       <ResponsiveContainer width="100%" aspect={5}>
       <BarChart 
@@ -99,7 +100,7 @@ const ThorVSoptoChart = ({ data }) => {
         >
          <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
-            <YAxis yAxisId="left" orientation="left" stroke="#8884d8" unit="$"/>
+            <YAxis yAxisId="left" orientation="left" stroke="#8884d8" />
             <YAxis yAxisId="right" orientation="right" stroke="#82ca9d"/>
             <Tooltip />
             <Legend />

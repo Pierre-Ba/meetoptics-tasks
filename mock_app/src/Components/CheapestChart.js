@@ -78,7 +78,7 @@ const CheapestChart = ({ data }) => {
 
   return (
     <div>
-      <h2 style={styles.title}> Cheapest products</h2>
+      <h2 style={styles.title}> Thor vs Opto: cheapest products</h2>
 
       <ResponsiveContainer width="100%" aspect={5}>
         <BarChart

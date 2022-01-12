@@ -1,17 +1,8 @@
 import React, { useState } from "react";
 import { AreaChart,  XAxis, YAxis, CartesianGrid, Tooltip, Area, ResponsiveContainer, Legend } from "recharts";
 import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
 import '../style.css'
-
-const styles = {
-  span: {
-    marginLeft: "10px",
-    marginRight: "10px",
-  },
-  title: {
-    marginLeft: "20px",
-  },
-};
 
 const OptoSigmaChart = ({ data }) => {
   const optoData = data.filter((item) => item.provider === "optoSigma");
@@ -64,7 +55,7 @@ const OptoSigmaChart = ({ data }) => {
 
   return (
     <div>
-      <h2>OptoSigma Highest Prices and Focal Length</h2>
+      <h2>OptoSigma most expensive products and Focal Length</h2>
       <ResponsiveContainer width="100%" aspect={5}>
         <AreaChart
           width="100%"
