@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+.buttonSeparator {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.chartSeparator {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
