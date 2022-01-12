@@ -37,7 +37,6 @@ const App = () => {
   return (
     <div style={styles.container}>
       <h1>Price Comparator</h1>
-      
       <ThorVSoptoChart data={data} />
       <div class="chartSeparator"></div>
       <CheapestChart data={data} />
